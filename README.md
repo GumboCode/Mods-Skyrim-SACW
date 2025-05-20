@@ -1,10 +1,24 @@
-# Simple Add More Carry Weight MCM
+# Simple Add Carry Weight MCM
 
 Mod Page: https://www.nexusmods.com/skyrimspecialedition/mods/149442
 
+This mod has 2 dependencies. For a simpler version with no dependencies, checkout Simple Add Carry Weight Lite: https://www.nexusmods.com/skyrimspecialedition/mods/150550
+
 ## About
 
-This mod simply allows you to add more carry weight to your current limit using a Mod Configuration Menu (a.k.a MCM).
+This mod simply allows you to add more carry weight to your current limit using a Mod Configuration Menu (a.k.a MCM). It doesn’t modify actor values directly, or edit race entries. Instead, the mod uses an ability that is almost identical to the Extra Pockets perk, but not related. In other words, it should be compatible even with other carry weight mods.
+
+## Features
+
+- There is a slider that increments by 500K carry weight at a time. It can be used to set your carry weight to ridiculous numbers very quickly, and It ranges from 0 to 10M.
+- You can use the manual field to input your own values. It can be used to fine tune how much carry weight you have, in case you want to give yourself a modest boost. The limit is 10M.
+- Setting the value to 0 will completely remove the effect from the player for easy clean up.
+
+<ins>Current limitations:</ins>
+
+- This mod is not able to reduce your carry weight below its normal value, though I can certainly look into that in the future if anyone expresses interest.
+- You can only set your own carry weight, it doesn’t affect your companions.
+- You cannot set your carry weight to be any higher than 10M because it will start to negatively impact anything else giving you carry weight bonuses. I.g. It can give your Extra Pockets perk permanent reductions.
 
 ## Installation
 
@@ -13,12 +27,10 @@ This mod simply allows you to add more carry weight to your current limit using 
 1. Skyrim Script Extender (SKSE64): https://www.nexusmods.com/skyrimspecialedition/mods/30379
 2. SkyUI: https://www.nexusmods.com/skyrimspecialedition/mods/12604
 
-
 <ins>Manually install the files:</ins>
 
 1. Download the latest version: https://www.nexusmods.com/skyrimspecialedition/mods/149442?tab=files
 2. Extract the contents of the .zip file into Skyrim's Data directory. ( "Skyrim Special Edition\Data\" )
-
 
 The Skyrim Special Edition folder location depends on what platform you installed it from. For Steam its in the ( "Steam\steamapps\common\" ) folder.
 
@@ -30,7 +42,6 @@ The Skyrim Special Edition folder location depends on what platform you installe
 4. The MCM may not have loaded yet, entering the mod configuration menu helps to speed it up.
 5. Unpause for a bit and you will get a brief notification at the top of the screen once the MCM is loaded.
 6. Go back to the mod configuration menu and look for Simple Add CW in the list.
-
 
 <ins>To uninstall:</ins>
 
