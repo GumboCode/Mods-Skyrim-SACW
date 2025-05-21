@@ -8,11 +8,14 @@ Scriptname GM_SACW_SKSE_MCM_Settings extends SKI_ConfigBase
 
 ; Properties -----------------------------------------------------
 
-actor           property    _PLAYER     auto
+Actor           property    _PLAYERREF     auto
+{Set this to the player reference.}
 
-globalVariable  property    _MAGNITUDE  auto
+GlobalVariable  property    _GLOBAL1_MAG  auto
+{The global to pull the magnitude from.}
 
-spell           property    _SPELL      auto
+Spell           property    _SPELL1      auto
+{The spell to apply directly to the player.}
 
 ; Private -----------------------------------------------------
 
@@ -61,7 +64,7 @@ event OnPageReset(string a_page)
     
     if (a_page == "Settings")
     
-        _mag_i = _MAGNITUDE.GetValueInt()
+        _mag_i = _GLOBAL1_MAG.GetValueInt()
         _mag_s = _mag_i as string   ;converts the integer to a string to be used by the input option
 
         SetCursorFillMode(TOP_TO_BOTTOM)
@@ -78,7 +81,7 @@ endEvent
 
 event OnOptionDefault(int a_option)
 
-    _MAGNITUDE.SetValue(0)
+    _GLOBAL1_MAG.SetValue(0)
     CastTheSpell()
     ForcePageReset()
 
@@ -121,7 +124,7 @@ event OnOptionSliderAccept(int a_option, float a_value)
 		
 	if (a_option == _slider1id_i)
     
-        _MAGNITUDE.SetValue(a_value)
+        _GLOBAL1_MAG.SetValue(a_value)
         CastTheSpell(a_value)   ;calls a function that exist inside this script and passes a float to it
         
 	endIf
@@ -158,7 +161,7 @@ event OnOptionInputAccept(int a_option, string a_input)
         
         endif
         
-		_MAGNITUDE.SetValue(_float1)
+		_GLOBAL1_MAG.SetValue(_float1)
         CastTheSpell(_float1)
     
     endif
@@ -173,11 +176,11 @@ endEvent
 
 Function CastTheSpell(float a_value = 0.0)    ;function that applies the spell to the player
     
-    _PLAYER.RemoveSpell(_SPELL)     ;removes the spell so it can be reapplied with new values
+    _PLAYERREF.RemoveSpell(_SPELL1)     ;removes the spell so it can be reapplied with new values
     if (a_value > 0)    ;only apply the spell if the input value is more than 0
     
-        _SPELL.SetNthEffectMagnitude(0, _MAGNITUDE.GetValue())  ;skse function that can temporarily set the magnitude of a spell
-        _PLAYER.AddSpell(_SPELL)
+        _SPELL1.SetNthEffectMagnitude(0, _GLOBAL1_MAG.GetValue())  ;skse function that can temporarily set the magnitude of a spell
+        _PLAYERREF.AddSpell(_SPELL1)
     
     endif
     
