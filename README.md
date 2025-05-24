@@ -1,5 +1,7 @@
 # Simple Add Carry Weight MCM
 
+<img src="https://staticdelivery.nexusmods.com/mods/1704/images/149442/149442-1746611647-180873838.jpeg" width="600">
+
 Mod Page: https://www.nexusmods.com/skyrimspecialedition/mods/149442
 
 This mod has 2 dependencies. For a simpler version with no dependencies, checkout Simple Add Carry Weight Lite: https://www.nexusmods.com/skyrimspecialedition/mods/150550
@@ -11,7 +13,11 @@ This mod simply allows you to add more carry weight to your current limit using 
 ## Features
 
 - There is a slider that increments by 500K carry weight at a time. It can be used to set your carry weight to ridiculous numbers very quickly, and It ranges from 0 to 10M.
+<img src="https://staticdelivery.nexusmods.com/mods/1704/images/149442/149442-1746674180-413327596.jpeg" width="600">
+
 - You can use the manual field to input your own values. It can be used to fine tune how much carry weight you have, in case you want to give yourself a modest boost. The limit is 10M.
+<img src="https://staticdelivery.nexusmods.com/mods/1704/images/149442/149442-1746674180-2124118414.jpeg" width="600">
+
 - Setting the value to 0 will completely remove the effect from the player for easy clean up.
 
 <ins>Current limitations:</ins>
