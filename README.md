@@ -36,9 +36,9 @@ This mod simply allows you to add more carry weight to your current limit using 
 <ins>Manually install the files:</ins>
 
 1. Download the latest version: https://www.nexusmods.com/skyrimspecialedition/mods/149442?tab=files
-2. Extract the contents of the .zip file into Skyrim's Data directory. ( "Skyrim Special Edition\Data\" )
+2. Extract the contents of the .zip file into Skyrim's Data directory. "Skyrim Special Edition\Data\"
 
-The Skyrim Special Edition folder location depends on what platform you installed it from. For Steam its in the ( "Steam\steamapps\common\" ) folder.
+The Skyrim Special Edition folder location depends on what platform you installed it from. For Steam its in the "Steam\steamapps\common\" folder.
 
 <ins>Make sure it's working:</ins>
 
