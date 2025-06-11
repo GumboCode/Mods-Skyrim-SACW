@@ -1,6 +1,6 @@
 # Simple Add Carry Weight MCM 🎛
 
-<img src="https://staticdelivery.nexusmods.com/mods/1704/images/149442/149442-1746611647-180873838.jpeg" width="600">
+[![VIDEO PREVIEW](https://staticdelivery.nexusmods.com/mods/1704/images/149442/149442-1746611647-180873838.jpeg)](https://www.youtube.com/watch?v=AG49MVJdDn0)
 
 Mod Page: https://www.nexusmods.com/skyrimspecialedition/mods/149442
 
